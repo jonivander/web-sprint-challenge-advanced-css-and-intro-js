@@ -60,7 +60,8 @@ img {
     border-radius: 2%;	
 }	
 img:hover {	
-    opacity: 80%;	
+    opacity: 80%;
+    transform: scale(1.125);	
 }	
 
 /*HEADER STYLES */
@@ -133,4 +134,47 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+/*Media Queries - Mobile*/
+
+@media(max-width:500px){
+    header nav a{
+        margin: 1vh;
+        font-size: 1.5rem;
+    }
+
+    img{
+        width:100%; 
+    }
+
+    .title-container{
+        width:100%;
+    }
+
+    .artists-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    .artists-container img{
+        height: 20vh;
+        width: auto;  
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    .bio{
+        font-size: 1rem;
+    }
+
+    .artist{
+        width:75%;
+    }
 }
