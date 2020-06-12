@@ -240,7 +240,7 @@ function getArtistByIndex(array, index) {
 function get20s(array){
   newArray = [];
   for(let i = 0; i<array.length; i++){
-    if(array[i].years > 1900 && array[i].years <= 2000){
+    if(array[i].years.includes(19)){
       newArray.push(array[i]);
     }
   }
